@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Tags Essenciais -->
+    <title>MyPlace - Conectando você ao lar dos seus sonhos</title>
+    <meta name="description" content="Encontre os melhores imóveis para alugar ou comprar com a MyPlace. Seu novo lar está aqui!">
+    <meta name="keywords" content="imobiliária, aluguel de apartamentos, comprar imóveis, casas à venda, imóveis de luxo, MyPlace">
+    <meta name="author" content="MyPlace Imobiliária">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Tags Open Graph (Facebook, WhatsApp) -->
+    <meta property="og:title" content="MyPlace - Conectando você ao lar dos seus sonhos">
+    <meta property="og:description" content="Descubra apartamentos, casas e imóveis comerciais perfeitos para você. Conectamos você ao seu novo lar.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://seusite.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Meta Tags para Twitter -->
+    <meta name="twitter:title" content="MyPlace - Conectando você ao lar dos seus sonhos">
+    <meta name="twitter:description" content="A imobiliária que transforma seus sonhos em realidade. Alugue ou compre seu imóvel ideal!">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="public/img/Black And White Aesthetic Minimalist Modern Simple Typography Coconut Cosmetics Logo (2) (1).png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://seusite.com">
+
+    <link rel="stylesheet" href="public/style.css">
+
+</head>
+<body>
+    <section class="top">
+        <svg class="image-container" id="svg">
+            <defs>
+                <clipPath id="clip">
+                    <path id="clip-path" />
+                </clipPath>
+            </defs>
+            <image href="public/img/pexels-naimbic-2030037.jpg" style="filter: brightness(70%) contrast(120%);" alt="Your Image" id="image" class="masked-image" />
+        </svg>
+
+        <header>
+            <button class="menuButton">
+                <div class="barMenu"></div>
+                <div class="barMenu"></div>
+                <div class="barMenu"></div>
+            </button>
+            <nav class="menuNavigation">
+                <ul id="menuNavigationUl">
+                    <li>Sobre Nós</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="containerLogo">
+                <img src="public/img/Black And White Aesthetic Minimalist Modern Simple Typography Coconut Cosmetics Logo (1).png" alt="logo MyPlace">
+            </div>
+            <div id="containerTitle">
+                <h1>
+                    O lar dos seus sonhos está a <br> um clique de distância!
+                </h1>
+                <div>
+                    <button id="bttSeeSlide">Ver</button>
+                    <button href="#" id="bttContactTop">
+                        <p>falar com um especialista</p>
+                        <img src="public/img/icons8-seta-longa-à-direita-100.png" alt="falar com um especialista">
+                    </button>
+                </div>
+            </div>
+            <div id="containerSlogan">
+                <img src="public/img/icons8-aspas-esquerdas-90.png" alt="aspas">
+                <p>
+                    "Tornando seus sonhos em realidade, <br> 
+                    ajudamos você a encontrar o lar <br> 
+                    perfeito com praticidade e segurança."
+                </p>
+            </div>
+        </main>
+
+        <section id="ControlSlideTop">
+            <div class="SlideTop">
+                <h2>
+                    Residencial Bela Vista
+                </h2>
+                <p>
+                    Um apartamento moderno e aconchegante, 
+                    localizado no coração da cidade. Com 2 
+                    quartos, varanda panorâmica e acabamentos 
+                    sofisticados.
+                </p>
+                <div class="controler">
+                    <span>R$ 450.000</span>
+                    <div>
+                        <button class="backButton">
+                            <img src="public/img/icons8-seta-longa-à-esquerda-100.png" alt="voltar">
+                        </button>
+                        <button class="nextButton">
+                            <img src="public/img/icons8-right-48 (1).png" alt="avançar">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="galerySection">
+        <header>
+            <h2>Imóveis em destaque</h2>
+            <h2>Para você</h2>
+        </header>
+        <section id="quadrantes">
+            <div id="selected" class="item">
+                <img class="itemBackground" src="public/img/pexels-pixabay-271624 (1).jpg" alt="apartamento disponível">
+                <a href="#" class="popFirstModel">
+                    <img src="public/img/icons8-right-48.png" alt="ir para a página do produto">
+                </a>
+                <section class="popSecondModel">
+                    <div class="pop-header">
+                        <h3>R$930.000</h3>
+                        <a href="#" class="linkSecondPop">
+                            <img src="public/img/icons8-right-48 (1).png" alt="página do apartamento">
+                        </a>
+                    </div>
+                    <div class="pop-desc">
+                        <p>Residencial Bela Vista</p>
+                        <p>Centro, São Paulo - SP</p>
+                        <p>2 quartos, varanda panorâmica, próximo ao metrô</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="item">
+                <img class="itemBackground" src="public/img/pexels-donaldtong94-189333.jpg" alt="apartamento disponível">
+                <a href="" class="popFirstModel">
+                    <img  src="public/img/icons8-right-48.png" alt="ir para a página do produto">
+                </a>
+                <section class="popSecondModel">
+                    <div class="pop-header">
+                        <h3>R$680.000</h3>
+                        <a href="#" class="linkSecondPop">
+                            <img src="public/img/icons8-right-48 (1).png" alt="página do apartamento">
+                        </a>
+                    </div>
+                    <div class="pop-desc">
+                        <p>Condomínio Vista Verde</p>
+                        <p>Jardim Paulista, São Paulo - SP</p>
+                        <p>3 quartos, suíte, lazer completo, vaga na garagem</p>
+                    </div>
+                </section>
+            </div>
+            <div class="item">
+                <img class="itemBackground" src="public/img/pexels-jvdm-1457842.jpg" alt="apartamento disponível">
+                <a href="" class="popFirstModel">
+                    <img  src="public/img/icons8-right-48.png" alt="ir para a página do produto">
+                </a>
+                <section class="popSecondModel">
+                    <div class="pop-header">
+                        <h3>R$980.000</h3>
+                        <a href="#" class="linkSecondPop">
+                            <img src="public/img/icons8-right-48 (1).png" alt="página do apartamento">
+                        </a>
+                    </div>
+                    <div class="pop-desc">
+                        <p>Apartamento Mar Azul</p>
+                        <p>Copacabana, Rio de Janeiro - RJ</p>
+                        <p>Vista para o mar, 3 suítes, segurança 24h</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="item">
+                <img class="itemBackground" src="public/img/pexels-polina-kovaleva-5644367.jpg" alt="apartamento disponível">
+                <a href="" class="popFirstModel">
+                    <img  src="public/img/icons8-right-48.png" alt="ir para a página do produto">
+                </a>
+                <section class="popSecondModel">
+                    <div class="pop-header">
+                        <h3>R$1.800.000</h3>
+                        <a href="#" class="linkSecondPop">
+                            <img src="public/img/icons8-right-48 (1).png" alt="página do apartamento">
+                        </a>
+                    </div>
+                    <div class="pop-desc">
+                        <p>Casa Jardim das Palmeiras</p>
+                        <p>Meireles, Fortaleza - CE</p>
+                        <p>Casa de alto padrão, 4 suítes, piscina, área gourmet</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </section>
+
+    <section class="aboutUs">
+        <div>
+            <header>
+                <h2>Sobre</h2>
+                <h2>Nós</h2>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vestibulum eget felis nec lacus suscipit viverra. Donec 
+                tincidunt, justo ut tempus facilisis, libero libero fringilla 
+                felis, eget volutpat ligula lectus ac lacus. Integer ut diam nec 
+                felis fermentum aliquet. Morbi consectetur, nisl ac ultricies sagittis, 
+                purus arcu gravida libero, vel sodales felis eros eget nulla. 
+                Fusce tincidunt odio nec massa varius, sed euismod nisi faucibus. 
+                Aliquam erat volutpat. Suspendisse potenti.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum 
+                eget felis nec lacus suscipit viverra. Donec tincidunt, justo ut 
+                tempus facilisis, libero libero fringilla felis, eget volutpat 
+                ligula lectus ac lacus. Integer ut diam nec felis fermentum aliquet. 
+                Morbi consectetur, nisl ac ultricies sagittis, purus arcu gravida 
+                libero, vel sodales felis eros eget nulla. Fusce tincidunt odio 
+                nec massa varius, sed euismod nisi faucibus. Aliquam erat volutpat. 
+                Suspendisse potenti.
+            </p>
+        </div>
+        <div>
+            <img src="public/img/pexels-a-darmel-7642093.jpg" alt="sobre nós">
+        </div>
+    </section>
+
+    <section class="contatForm">
+        <!--O background deve ser alterado através do CSS-->
+        <div class="form">
+            <header>
+                <h3>Entre em</h3>
+                <h3>Contato</h3>
+            </header>
+            <form action="#">
+                <input type="text" placeholder="nome">
+                <input type="text" placeholder="contato(celular ou email)">
+                <textarea name="" id="" placeholder="sua mensagem"></textarea>
+                <button type="submit">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <svg class="image-containerFooter" id="svgFooter">
+            <defs>
+                <clipPath id="clipFooter">
+                    <path id="clip-pathFooter" />
+                </clipPath>
+            </defs>
+            <rect id="backgroundFooter" width="100%" height="100%" clip-path="url(#clipFooter)" />
+        </svg>
+
+        <section class="contentFooter">
+            <header>
+                <h2>Encontre sua</h2>
+                <h2>Casa dos Sonhos</h2>
+                <div>
+                    <p>O lar dos seus sonhos está a um clique de distância</p>
+                    <div class="containerSocial">
+                        <a href="#">
+                            <img src="public/img/icons8-instagram-100.png" alt="ver no instagram">
+                        </a>
+                        <a href="#">
+                            <img src="public/img/icons8-facebook-novo-100.png" alt="Ver no Facebook">
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div>
+                <p>contato@suaimobiliaria.com</p>
+                <p>(XX) XXXXX-XXXX</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="public/animeJS/firstSVG.js"></script>
+    <script src="public/animeJS/menu.js"></script>
+    <script src="public/animeJS/galery.js"></script>
+</body>
+</html>
