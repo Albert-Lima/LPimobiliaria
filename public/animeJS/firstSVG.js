@@ -58,25 +58,36 @@ window.addEventListener('load', adjustViewBox);
 window.addEventListener('resize', adjustViewBox);
 
 
-/*slides de imagens no topo*/
+/* Slides de imagens no topo */
 const images = [
     "public/img/pexels-naimbic-2030037.jpg",
     "public/img/pexels-polina-kovaleva-5644367.jpg",
     "public/img/pexels-pixabay-271624 (1).jpg"
 ];
 
+const slides = document.querySelectorAll(".SlideTop"); // Seleciona todas as divs de slide
 let index = 0;
 const imageElement = document.getElementById("image");
 
-function changeImage() {
+function changeSlide() {
+    // Troca a imagem do slide SVG
+    imageElement.setAttribute("href", images[index]);
 
-    setTimeout(() => {
-        index = (index + 1) % images.length;
-        imageElement.setAttribute("href", images[index]); // Troca a imagem
-    }, 1000); // Tempo da transição
+    // Esconde todas as divs de slide
+    slides.forEach(slide => slide.style.display = "none");
+
+    // Exibe apenas a div correspondente ao índice atual
+    slides[index].style.display = "block";
+
+    // Atualiza o índice para o próximo slide
+    index = (index + 1) % images.length;
 }
 
-setInterval(changeImage, 5000);
+// Inicia o slide automaticamente a cada 5 segundos
+setInterval(changeSlide, 5000);
+
+// Exibe o primeiro slide ao carregar a página
+window.addEventListener("load", changeSlide);
 
 
 /*clip-path do footer*/

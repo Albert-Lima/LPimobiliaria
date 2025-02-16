@@ -52,6 +52,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 200;
 }
 .menuNavigation{
     display: flex;
@@ -71,7 +72,9 @@
     font-weight: 600;
     color: var(--var-colorDarkBackground);
 }
-
+.menuNavigation ul li{
+    cursor: pointer;
+}
 .menuButton{
     background: none;
     border: none;
@@ -306,7 +309,6 @@
     padding: 10px 20px;
     border-radius: 30px;
     background-color: var(--var-colorSuaveFont2);
-    width: 30%;
 }
 
 .controler div{
@@ -531,12 +533,11 @@
     padding-bottom: 40px;
 }
 .aboutUs div:nth-child(1){
-    width: calc(60% - 30px);
+    width: 100%;
     height: calc(100% - 30px);
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    justify-self: start;
 }
 .aboutUs div:nth-child(1) header{
     display: flex;
@@ -564,9 +565,11 @@
     font-weight: 400;
     font-size: 11pt;
     margin-top: 0px;
-    max-width: 600px;
+    width: 600px;
+    max-width: 90%;
     margin-top: 30px;
     text-align: center;
+    justify-self: center;
 }
 
 

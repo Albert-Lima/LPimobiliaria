@@ -40,3 +40,29 @@ bttMenu.addEventListener("click", openMenu)
 
 
 /*scroll functions*/
+const buttonAboutUs = document.querySelector("#bttAboutUs")
+const aboutUs = document.querySelector(".aboutUs")
+
+
+buttonAboutUs.addEventListener("click", ()=>{
+    let elementoRect = aboutUs.getBoundingClientRect(); // Pega as dimensões do elemento
+    let elementoCentro = elementoRect.top + window.scrollY - (window.innerHeight / 2) + (elementoRect.height / 2);
+
+    window.scrollTo({
+        top: elementoCentro,
+        behavior: "smooth"
+    });
+})
+
+const buttonContato = document.querySelector("#bttContato")
+const contato = document.querySelector(".contatForm")
+
+buttonContato.addEventListener("click", ()=>{
+    let elementoRect = contato.getBoundingClientRect()
+    let elementoCentro = elementoRect.top - 50
+
+    window.scrollTo({
+        top: elementoCentro,
+        behavior: "smooth"
+    })
+})

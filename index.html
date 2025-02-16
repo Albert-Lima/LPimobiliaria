@@ -52,8 +52,8 @@
             </button>
             <nav class="menuNavigation">
                 <ul id="menuNavigationUl">
-                    <li>Sobre Nós</li>
-                    <li>Contato</li>
+                    <li id="bttAboutUs">Sobre Nós</li>
+                    <li id="bttContato">Contato</li>
                 </ul>
             </nav>
         </header>
@@ -85,26 +85,40 @@
         </main>
 
         <section id="ControlSlideTop">
+            <div class="SlideTop"><!--os slides aqui dentro são renderizados utilizando o JS do slide das imagens do SVG-->
+                <h2>
+                    Apartamento Mar Azul
+                </h2>
+                <p>
+                    Copacabana, Rio de Janeiro - RJ <br>
+                    Vista para o mar, 3 suítes, segurança 24h
+                </p>
+                <div class="controler">
+                    <span>R$980.000</span>
+                </div>
+            </div>
+            <div class="SlideTop">
+                <h2>
+                    Casa Jardim das Palmeiras
+                </h2>
+                <p>
+                    Meireles, Fortaleza - CE <br>
+                    Casa de alto padrão, 4 suítes, piscina, área gourmet
+                </p>
+                <div class="controler">
+                    <span>R$1.800.000</span>
+                </div>
+            </div>
             <div class="SlideTop">
                 <h2>
                     Residencial Bela Vista
                 </h2>
                 <p>
-                    Um apartamento moderno e aconchegante, 
-                    localizado no coração da cidade. Com 2 
-                    quartos, varanda panorâmica e acabamentos 
-                    sofisticados.
+                    Centro, São Paulo - SP <br>
+                    2 quartos, varanda panorâmica, próximo ao metrô
                 </p>
                 <div class="controler">
-                    <span>R$ 450.000</span>
-                    <div>
-                        <button class="backButton">
-                            <img src="public/img/icons8-seta-longa-à-esquerda-100.png" alt="voltar">
-                        </button>
-                        <button class="nextButton">
-                            <img src="public/img/icons8-right-48 (1).png" alt="avançar">
-                        </button>
-                    </div>
+                    <span>R$930.000</span>
                 </div>
             </div>
         </section>
