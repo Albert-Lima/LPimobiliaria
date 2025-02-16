@@ -30,27 +30,48 @@ function adjustViewBox() {
     const borderRadius = 20;
 
     // Ajustar as coordenadas do clipPath para reagir às novas dimensões
-    const newPath = ` 
-        M${borderRadius},0 
-        L${clipWidth * 0.7},0
-        L${clipWidth * 0.75},${clipHeight * 0.05}
-        L${clipWidth - borderRadius },${clipHeight * 0.05} 
-        A${borderRadius},${borderRadius} 0 0,1 ${clipWidth},${clipHeight * 0.05 + borderRadius }  
-        L${clipWidth },${clipHeight * 0.72 - borderRadius} 
-        A${borderRadius},${borderRadius} 0 0,1 ${clipWidth - borderRadius},${clipHeight * 0.72 }  
-        L${clipWidth * 0.7},${clipHeight * 0.72 }  
-        A${borderRadius },${borderRadius} 0 0,0 ${clipWidth * 0.7 - borderRadius},${clipHeight * 0.72 + borderRadius}  
-        L${clipWidth * 0.7 - borderRadius},${clipHeight - borderRadius}
-        A${borderRadius  },${borderRadius } 0 0,1 ${clipWidth * 0.7 - borderRadius  - borderRadius},${clipHeight} 
-        L${clipWidth * 0 + borderRadius},${clipHeight}
-        A${borderRadius},${borderRadius} 0 0,1 0,${clipHeight - borderRadius}
-        L0,${clipHeight * 0 + borderRadius}
-        A${borderRadius},${borderRadius} 0 0,1 ${borderRadius},0
-        Z
-    `;
+    if(window.innerWidth >= 700){
+        const newPath = ` 
+            M${borderRadius},0 
+            L${clipWidth * 0.7},0
+            L${clipWidth * 0.75},${clipHeight * 0.05}
+            L${clipWidth - borderRadius },${clipHeight * 0.05} 
+            A${borderRadius},${borderRadius} 0 0,1 ${clipWidth},${clipHeight * 0.05 + borderRadius }  
+            L${clipWidth },${clipHeight * 0.72 - borderRadius} 
+            A${borderRadius},${borderRadius} 0 0,1 ${clipWidth - borderRadius},${clipHeight * 0.72 }  
+            L${clipWidth * 0.7},${clipHeight * 0.72 }  
+            A${borderRadius },${borderRadius} 0 0,0 ${clipWidth * 0.7 - borderRadius},${clipHeight * 0.72 + borderRadius}  
+            L${clipWidth * 0.7 - borderRadius},${clipHeight - borderRadius}
+            A${borderRadius  },${borderRadius } 0 0,1 ${clipWidth * 0.7 - borderRadius  - borderRadius},${clipHeight} 
+            L${clipWidth * 0 + borderRadius},${clipHeight}
+            A${borderRadius},${borderRadius} 0 0,1 0,${clipHeight - borderRadius}
+            L0,${clipHeight * 0 + borderRadius}
+            A${borderRadius},${borderRadius} 0 0,1 ${borderRadius},0
+            Z
+        `;
+        // Atualizando o path do clipPath
+        clipPath.setAttribute('d', newPath);
+    } else{
+        const newPath = ` 
+            M${borderRadius},0 
+            L${clipWidth * 0.7},0
+            L${clipWidth * 0.75},${clipHeight * 0.05}
+            L${clipWidth - borderRadius },${clipHeight * 0.05} 
+            A${borderRadius},${borderRadius} 0 0,1 ${clipWidth},${clipHeight * 0.05 + borderRadius }  
+            L${clipWidth },${clipHeight - borderRadius} 
+            A${borderRadius},${borderRadius} 0 0,1 ${clipWidth - borderRadius},${clipHeight}  
+            L${clipWidth * 0 + borderRadius},${clipHeight}
+            A${borderRadius},${borderRadius} 0 0,1 0,${clipHeight - borderRadius}
+            L0,${clipHeight * 0 + borderRadius}
+            A${borderRadius},${borderRadius} 0 0,1 ${borderRadius},0
+            Z
+        `;
+        // Atualizando o path do clipPath
+        clipPath.setAttribute('d', newPath);
+    }
     
-    // Atualizando o path do clipPath
-    clipPath.setAttribute('d', newPath);
+    
+    
 }
 
 // Chamar a função ao carregar a página e sempre que a janela for redimensionada

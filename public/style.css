@@ -111,6 +111,7 @@
     .top header{
         right: 30px;
         flex-direction: column;
+        position: fixed;
     }
     .menuNavigation ul{
         display: none;
@@ -261,6 +262,33 @@
 #containerSlogan p{
     z-index: 2;
 }
+/*responsividade Topo-----------------------------------------------------------------------*/
+@media (max-width: 1250px) {
+    #containerTitle h1{
+        font-size: 40pt;
+    }
+}
+@media (max-width: 900px) {
+    #containerTitle h1{
+        font-size: 30pt;
+        margin-left: 0px;
+    }
+    #containerTitle div{
+        margin-left: 0px;
+    }
+    #containerSlogan{
+        margin-left: 0px;
+    }
+    #containerLogo{
+        margin-top: 20px;
+    }
+    #containerLogo img{
+        height: 30px;
+        width: 100px;
+        object-fit: cover;
+        filter: drop-shadow(0px 0px 5px rgba(61, 61, 61, 0.222));
+    }
+}
 
 
 /*controle slide svg*/
@@ -352,7 +380,57 @@
     width: 20px;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.505));
 }
-
+/*responsividade SlideTop-----------------------------------------------------------------------*/
+@media (max-width: 900px) {
+    .SlideTop h2{
+        font-size: 10pt;
+    }
+    .SlideTop p{
+        font-family: var(--var-FontStyled1);
+        font-size: 9pt;
+        color: var(--var-colorDarkBackground);
+        margin-top: 10px;
+    }
+    .controler{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 100%;
+        margin-top: 30px;;
+    }
+    .controler span{
+        font-family: var(--var-FontStyled1);
+        font-size: 10pt;
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 30px;
+        background-color: var(--var-colorSuaveFont2);
+    }
+}
+@media (max-width: 700px) {
+    #ControlSlideTop{
+        position: absolute;
+        left: 30px;
+        bottom: 50px;
+        width: max-content;
+        height: max-content;
+        padding: 30px;
+        border-radius: 20px;
+        background-color: var(--var-colorDestaqueSuave);
+        filter: opacity(0.9);
+    }
+    .SlideTop h2{
+        font-size: 12pt;
+    }
+    .SlideTop p{
+        font-family: var(--var-FontStyled1);
+        font-size: 10pt;
+        color: var(--var-colorDarkBackground);
+        margin-top: 10px;
+    }
+}
 
 
 
@@ -757,4 +835,34 @@ input:-webkit-autofill:active {
     font-size: 10pt;
     font-weight: 400;
     color: var(--var-colorDestaqueSuave);
+}
+
+/*responsividade  Footer*/
+@media (max-width: 980px) {
+    .contentFooter header div:nth-child(1){
+        font-size: 10pt;
+    }
+    .contentFooter header div:nth-child(2) p{
+        font-family: var(--var-FontStyled1);
+        color: var(--var-colorSuaveFont2);
+        font-size: 9pt;
+        font-weight: 400;
+    }
+}
+@media (max-width: 800px) {
+    .contentFooter header div:nth-child(1){
+        flex-direction: column;
+        gap: 0px;
+    }
+    .contentFooter header div:nth-child(2) p{
+        margin-top: 5px;
+    }
+    .contentFooter header div:nth-child(2) div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
 }

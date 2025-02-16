@@ -55,11 +55,11 @@ buttonAboutUs.addEventListener("click", ()=>{
 })
 
 const buttonContato = document.querySelector("#bttContato")
-const contato = document.querySelector(".contatForm")
+const contatoForm = document.querySelector(".form")
 
 buttonContato.addEventListener("click", ()=>{
-    let elementoRect = contato.getBoundingClientRect()
-    let elementoCentro = elementoRect.top - 50
+    let elementoRect = contatoForm.getBoundingClientRect()
+    let elementoCentro = elementoRect.top + (window.scrollY - 50) 
 
     window.scrollTo({
         top: elementoCentro,
