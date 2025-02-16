@@ -17,20 +17,15 @@
 
 /*clip-path topo--------------------------------------------------------------------------------------*/
 .image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 10px;
+    
+    height: 100%;
+    width: calc(100% - 20px);
+    background-color: green;
 }
 .masked-image {
     clip-path: url(#clip);
     opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-.masked-image .hidden {
-    opacity: 0;
+    
 }
 
 /*Primeira dobra-------------------------------------------*/
@@ -289,6 +284,49 @@
         filter: drop-shadow(0px 0px 5px rgba(61, 61, 61, 0.222));
     }
 }
+@media (max-width: 700px) {
+    #containerTitle h1{
+        font-size: 20pt;
+        margin-left: 0px;
+        margin-top: -60px;
+    }
+    #containerTitle div{
+        margin-left: 0px;
+    }
+    #containerSlogan{
+        margin-left: 0px;
+    }
+    #containerLogo{
+        padding: 5px 10px;
+    }
+    #containerLogo img{
+        height: 20px;
+        width: 70px;
+        object-fit: cover;
+        filter: drop-shadow(0px 0px 5px rgba(61, 61, 61, 0.222));
+    }
+}
+@media (max-width: 440px){
+    #bttContactTop{
+        border-radius: 20px;
+        padding: 8px 28px;
+        font-size: 12px;
+    }
+    #bttContactTop img{
+        height: 25px;
+    }
+    #containerTitle h1{
+        font-size: 15pt;
+        margin-left: 0px;
+        margin-top: -60px;
+    }
+    #containerTitle div{
+        margin-left: 0px;
+    }
+    #containerSlogan{
+        margin-top: 30px;
+    }
+}
 
 
 /*controle slide svg*/
@@ -415,8 +453,9 @@
         left: 30px;
         bottom: 50px;
         width: max-content;
+        max-width: 250px;
         height: max-content;
-        padding: 30px;
+        padding: 20px;
         border-radius: 20px;
         background-color: var(--var-colorDestaqueSuave);
         filter: opacity(0.9);
@@ -426,11 +465,12 @@
     }
     .SlideTop p{
         font-family: var(--var-FontStyled1);
-        font-size: 10pt;
+        font-size: 9pt;
         color: var(--var-colorDarkBackground);
-        margin-top: 10px;
+        margin-top: 0px;
     }
 }
+
 
 
 
