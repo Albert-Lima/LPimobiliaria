@@ -53,7 +53,7 @@ function adjustViewBox() {
         clipPath.setAttribute('d', newPath);
     } else{
         const newPath = ` 
-            M${borderRadius},0 
+            M${borderRadius},0
             L${clipWidth * 0.7},0
             L${clipWidth * 0.75},${clipHeight * 0.05}
             L${clipWidth - borderRadius },${clipHeight * 0.05} 

@@ -17,15 +17,16 @@
 
 /*clip-path topo--------------------------------------------------------------------------------------*/
 .image-container {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     height: 100%;
-    width: calc(100% - 20px);
+    width: 100%;
     background-color: green;
 }
 .masked-image {
     clip-path: url(#clip);
-    opacity: 1;
-    
 }
 
 /*Primeira dobra-------------------------------------------*/
@@ -37,7 +38,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 0px;
 }
 .top header{
     position: absolute;
