@@ -34,9 +34,9 @@ function adjustViewBox() {
         const newPath = ` 
             M${borderRadius},0 
             L${clipWidth * 0.7},0
-            L${clipWidth * 0.75},${clipHeight * 0.05}
-            L${clipWidth - borderRadius },${clipHeight * 0.05} 
-            A${borderRadius},${borderRadius} 0 0,1 ${clipWidth},${clipHeight * 0.05 + borderRadius }  
+            L${clipWidth * 0.75},${clipHeight * 0.06}
+            L${clipWidth - borderRadius },${clipHeight * 0.06} 
+            A${borderRadius},${borderRadius} 0 0,1 ${clipWidth},${clipHeight * 0.06 + borderRadius }  
             L${clipWidth },${clipHeight * 0.72 - borderRadius} 
             A${borderRadius},${borderRadius} 0 0,1 ${clipWidth - borderRadius},${clipHeight * 0.72 }  
             L${clipWidth * 0.7},${clipHeight * 0.72 }  
@@ -81,9 +81,9 @@ window.addEventListener('resize', adjustViewBox);
 
 /* Slides de imagens no topo */
 const images = [
-    "public/img/pexels-naimbic-2030037.jpg",
-    "public/img/pexels-polina-kovaleva-5644367.jpg",
-    "public/img/pexels-pixabay-271624 (1).jpg"
+    "public/img/ImgThree.webp",
+    "public/img/ImgFive.webp",
+    "public/img/ImgFour.webp"
 ];
 
 const slides = document.querySelectorAll(".SlideTop"); // Seleciona todas as divs de slide
@@ -105,7 +105,7 @@ function changeSlide() {
 }
 
 // Inicia o slide automaticamente a cada 5 segundos
-setInterval(changeSlide, 5000);
+setInterval(changeSlide, 10000);
 
 // Exibe o primeiro slide ao carregar a página
 window.addEventListener("load", changeSlide);

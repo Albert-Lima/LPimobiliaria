@@ -163,7 +163,7 @@
 .top main{
     position: absolute;
     top: 20px;
-    left: 30px;
+    left: 20px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -501,7 +501,7 @@
 
 #quadrantes{
     display: grid;
-    grid-template-columns: repeat(4, calc(24vw - 15px)); /* 4 colunas de largura igual */
+    grid-template-columns: repeat(4, calc(25% - 20px)); /* 4 colunas de largura igual */
     grid-template-rows: repeat(2, 24vw); /* 3 linhas de altura 200px */
     gap: 20px; /* Espaçamento entre os itens */
     width: 100%;
@@ -718,7 +718,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: calc(100% - 30px);
+    width: calc(100% - 20px);
     height: auto;
     margin: auto;
     margin-top: 100px;
@@ -797,9 +797,9 @@
     margin: auto;
     margin-top: 80px;
     border-radius: 20px;
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     height: 700px;
-    background-image: url("img/pexels-jonathanborba-3303614.jpg");
+    background-image: url("img/ImgForm.webp");
     background-size: cover;
     background-position: center center;
     mask-repeat: no-repeat;
@@ -934,8 +934,8 @@ input:-webkit-autofill:active {
 /*Footer*/
 .page-footer{
     margin-top: 80px;
-    width: calc(100% - 40px);
-    padding: 20px;
+    width: calc(100% - 20px);
+    padding: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
