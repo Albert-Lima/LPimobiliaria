@@ -2,7 +2,7 @@ function adjustViewBox() {
     const svg = document.querySelector('#svg');
     const clipPath = document.querySelector('#clip-path');
     const width = window.innerWidth;  
-    const height = window.innerHeight;
+    const height = document.documentElement.clientHeight;
 
     // Atualizando o viewBox do SVG
     svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
@@ -55,9 +55,9 @@ function adjustViewBox() {
         const newPath = ` 
             M${borderRadius},0
             L${clipWidth * 0.7},0
-            L${clipWidth * 0.75},${clipHeight * 0.05}
-            L${clipWidth - borderRadius },${clipHeight * 0.05} 
-            A${borderRadius},${borderRadius} 0 0,1 ${clipWidth},${clipHeight * 0.05 + borderRadius }  
+            L${clipWidth * 0.75},${clipHeight * 0.06}
+            L${clipWidth - borderRadius },${clipHeight * 0.06} 
+            A${borderRadius},${borderRadius} 0 0,1 ${clipWidth},${clipHeight * 0.06 + borderRadius }  
             L${clipWidth },${clipHeight - borderRadius} 
             A${borderRadius},${borderRadius} 0 0,1 ${clipWidth - borderRadius},${clipHeight}  
             L${clipWidth * 0 + borderRadius},${clipHeight}

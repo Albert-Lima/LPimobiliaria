@@ -682,7 +682,7 @@
     }
     #quadrantes{
         display: grid;
-        grid-template-columns: repeat(2, calc(50% - 10px)); /* 2 colunas de largura igual */
+        grid-template-columns: repeat(2, calc(50% - 20px)); /* 2 colunas de largura igual */
         grid-template-rows: repeat(5, 25vw); /* 3 linhas de altura 25vw */
         width: 100%;
         justify-content: center;
