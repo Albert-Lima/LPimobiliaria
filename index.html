@@ -5,12 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        /* Estiliza o fundo do loader */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        /* Criando o efeito do Spinner */
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(0, 0, 0, 0.1);
+            border-top-color: #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Animação do Loader */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
         body {
             display: none;
         }
     </style>
     <script>
         window.addEventListener("load", function() {
+            // Remove o loader e exibe o corpo da página
+            document.getElementById("loader").style.display = "none";
             document.body.style.display = "block";
         });
     </script>
@@ -46,6 +77,10 @@
 
 </head>
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    
     <section class="top">
         <svg class="image-container" id="svg">
             <defs>
